@@ -8,6 +8,7 @@ defmodule Pistvakt.Application do
   def start(_type, _args) do
     children = [
       Pistvakt.Repo,
+      Pistvakt.Scheduler
     ]
 
     opts = [strategy: :one_for_one, name: Pistvakt.Supervisor]
