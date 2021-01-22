@@ -1,6 +1,7 @@
 # Pistvakt
 
-**TODO: Add description**
+Twitter bot made in Elixir
+Tweets random quotes from the swedish tv-show Pistvakt at set intervals
 
 ## Installation
 
