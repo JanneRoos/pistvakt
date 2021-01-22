@@ -1,6 +1,6 @@
 # Pistvakt
 
-Twitter bot made in Elixir
+Twitter bot made in Elixir  
 Tweets random quotes from the swedish tv-show Pistvakt at set intervals
 
 ## Installation
