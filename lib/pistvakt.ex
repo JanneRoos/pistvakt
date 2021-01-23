@@ -15,4 +15,8 @@ defmodule Pistvakt do
   def hello do
     :world
   end
+
+  def print_stuff() do
+    IO.puts "P-p-p-pistvakt"
+  end
 end

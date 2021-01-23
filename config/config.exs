@@ -7,3 +7,9 @@ config :pistvakt, Pistvakt.Repo,
   hostname: "localhost"
 
 config :pistvakt, ecto_repos: [Pistvakt.Repo]
+
+config :pistvakt, Pistvakt.Scheduler,
+  jobs: [
+    {"* * * * *", {Pistvakt, :print_stuff, []}}
+  ],
+  debug_logging: false
