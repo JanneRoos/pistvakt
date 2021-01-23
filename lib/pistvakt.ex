@@ -3,6 +3,11 @@ defmodule Pistvakt do
   Documentation for `Pistvakt`.
   """
 
+  alias Pistvakt.Repo
+  alias Pistvakt.Quote
+
+  import Ecto.Query
+
   @doc """
   Hello world.
 
@@ -16,7 +21,13 @@ defmodule Pistvakt do
     :world
   end
 
-  def print_stuff() do
-    IO.puts "P-p-p-pistvakt"
+  def get_random_quote() do
+    query =
+      from Quote,
+      order_by: fragment("RANDOM()"),
+      limit: 1
+
+    [%Quote{quote: qte, name: name}] = Repo.all(query)
+    IO.puts("\n\"#{qte}\"\n- #{name}")    
   end
 end
