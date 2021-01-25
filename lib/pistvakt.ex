@@ -20,10 +20,16 @@ defmodule Pistvakt do
   end
 
   def get_random_quote() do
-    %Quote{quote: qte, name: name} =
-      QuoteManagement.list_quotes()
-      |> Enum.random()
+    QuoteManagement.list_quotes()
+    |> Enum.random()
+  end
 
-    IO.puts("\n\"#{qte}\"\n- #{name}")    
+  def print_quote(%Quote{quote: qte, name: name}) do
+    IO.puts("\n\"#{qte}\"\n- #{name}")
+  end
+
+  def print_random_quote() do
+    get_random_quote()
+    |> print_quote()
   end
 end

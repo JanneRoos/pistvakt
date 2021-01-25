@@ -10,7 +10,7 @@ config :pistvakt, ecto_repos: [Pistvakt.Repo]
 
 config :pistvakt, Pistvakt.Scheduler,
   jobs: [
-    {"* * * * *", {Pistvakt, :get_random_quote, []}}
+    {"* * * * *", {Pistvakt, :print_random_quote, []}}
   ],
   debug_logging: false
 
