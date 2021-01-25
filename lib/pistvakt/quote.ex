@@ -6,6 +6,8 @@ defmodule Pistvakt.Quote do
     field :name, :string
     field :season, :integer
     field :episode, :integer
+
+    timestamps()
   end
 
   def changeset(quote, params \\ %{}) do

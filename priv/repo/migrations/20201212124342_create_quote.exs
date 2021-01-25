@@ -7,6 +7,8 @@ defmodule Pistvakt.Repo.Migrations.CreateQuote do
       add :name, :string
       add :season, :integer
       add :episode, :integer
+
+      timestamps()
     end
   end
 end

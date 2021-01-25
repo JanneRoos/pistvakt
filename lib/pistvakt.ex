@@ -3,8 +3,6 @@ defmodule Pistvakt do
   Documentation for `Pistvakt`.
   """
 
-  alias Pistvakt.Repo
-  alias Pistvakt.Quote
   alias Pistvakt.Management.QuoteManagement
 
   import Ecto.Query
