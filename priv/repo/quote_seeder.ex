@@ -1,6 +1,8 @@
 defmodule Pistvakt.Seeds.QuoteSeeder do
+  
   alias Pistvakt.Management
   alias Pistvakt.Seeder
+  
   def seed do
     quotes = [
       %{

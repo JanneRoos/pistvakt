@@ -99,6 +99,4 @@ defmodule Pistvakt.Management.QuoteManagement do
   def change_quote(%Quote{} = quote) do
     Quote.changeset(quote, %{})
   end
-
-
 end

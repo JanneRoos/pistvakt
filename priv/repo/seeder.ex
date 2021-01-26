@@ -3,5 +3,6 @@ defmodule Pistvakt.Seeds.Seeder do
 
   def seed do
     Seeds.QuoteSeeder.seed
+    Seeds.TweetSeeder.seed
   end
 end
