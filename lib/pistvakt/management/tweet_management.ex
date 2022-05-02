@@ -99,4 +99,10 @@ defmodule Pistvakt.Management.TweetManagement do
   def change_tweet(%Tweet{} = tweet) do
     Tweet.changeset(tweet, %{})
   end
+
+  def get_last_tweet() do
+    Tweet
+    |> Ecto.Query.last
+    |> Repo.one
+  end
 end
