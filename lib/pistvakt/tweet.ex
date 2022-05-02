@@ -1,4 +1,7 @@
 defmodule Pistvakt.Tweet do
+  @moduledoc """
+  Model for tweets
+  """
   use Ecto.Schema
 
   schema "tweets" do

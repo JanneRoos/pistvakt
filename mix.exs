@@ -38,7 +38,8 @@ defmodule Pistvakt.MixProject do
       {:ecto_sql, "~> 3.5"},
       {:ecto_enum, "~> 1.4"},
       {:postgrex, ">= 0.15.0"},
-      {:quantum, "~> 3.0"}
+      {:quantum, "~> 3.0"},
+      {:credo, "~> 1.6.4", only: [:dev, :test], runtime: false},
     ]
   end
 

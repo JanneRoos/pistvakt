@@ -1,4 +1,7 @@
 defmodule Mix.Tasks.Pistvakt.Seed do
+  @moduledoc """
+  Seed module to seed with initial data
+  """
   use Mix.Task
 
   @shortdoc "Seed Pistvakt with initial data."

@@ -1,4 +1,7 @@
 defmodule Pistvakt.Quote do
+  @moduledoc """
+  Model for quotes
+  """
   use Ecto.Schema
 
   schema "quotes" do
